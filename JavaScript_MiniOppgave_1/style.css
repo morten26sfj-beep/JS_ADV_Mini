@@ -1,0 +1,91 @@
+/* Center the page content and set the dark purple background and default text style. */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #340036;
+  color: #d3d3d3;
+  font-family: Arial, sans-serif;
+}
+
+/* Make the main content a centered, readable card. */
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid #754878;
+  border-radius: 16px;
+  background-color: #4b1b4d;
+  box-shadow: 0 8px 24px #00000040;
+}
+
+/* Center the store name and make it larger and bold. */
+h1 {
+  margin: 0 0 0.5rem;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Center the subtitle and make it larger than the regular text. */
+main > p {
+  margin: 0 0 2rem;
+  color: #d3d3d3;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Style each results section as a lighter card inside the main card. */
+section {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #5b2a5e;
+}
+
+/* Add space between product names in each list. */
+li {
+  margin: 0.4rem 0;
+}
+
+/* Style buttons with a light grey background and dark purple text. */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #d3d3d3;
+  color: #340036;
+  cursor: pointer;
+}
+
+/* Darken the button when the user hovers over it. */
+button:hover {
+  background-color: #a9a9a9;
+}
+
+/* Darken the button further while it is being clicked. */
+button:active {
+  background-color: #555555;
+}
+
+/* Make the layout fit smaller screens. */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    padding: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
